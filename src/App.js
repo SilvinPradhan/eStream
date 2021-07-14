@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/header/Header.component";
 import Home from "./components/home/Home.jsx";
+import Details from "./components/details/Details";
 
 function App() {
   return (
@@ -10,7 +11,12 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/detail">
+            <Details />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom'
 function Header() {
     return (
         <Nav>
-            <Logo src="/images/logo.svg" />
+            <Logo src="/images/logo.png" />
             <NavMenu>
                 <a href="/">
                     <img src="/images/home-icon.svg" alt="Home" />
@@ -45,9 +45,10 @@ const Nav = styled.div`
     display: flex;
     align-items: center;
     padding: 0 36px;
+    overflow-x: hidden;
 `
 const Logo = styled.img`
-    width: 80px;
+    width: 40px;
 `
 const NavMenu = styled.div`
     display: flex;
