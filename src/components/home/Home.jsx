@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import Carousel from '../carousel/Carousel'
 
 function Home() {
     return (
         <Container>
-
+            <Carousel />
         </Container>
     )
 }
@@ -24,6 +25,5 @@ const Container = styled.main`
         right: 0;
         bottom: 0;
         z-index: -1
-
     }
 `
