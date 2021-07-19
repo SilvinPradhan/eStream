@@ -21,6 +21,7 @@ function Details() {
         <PlayButton></PlayButton>
         <TrailerButton></TrailerButton>
         <AddButton></AddButton>
+        <GroupWatchButton />
       </Controls>
     </Container>
   );
@@ -62,7 +63,31 @@ const ImageTitle = styled.div`
   }
 `;
 
-const Controls = styled.div``;
-const PlayButton = styled.div``;
-const TrailerButton = styled.div``;
-const AddButton = styled.div``;
+const Controls = styled.div`
+  display: flex;
+`;
+const PlayButton = styled.button`
+  border-radius: 4px;
+  margin-right: 22px;
+  font-size: 15px;
+  padding: 0px 24px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background: rgb(249, 249, 249);
+  border: none;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(149, 198, 198);
+  }
+`;
+const TrailerButton = styled(PlayButton)`
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(249, 249, 249);
+  color: rgb(249, 249, 249);
+  text-transform: uppercase;
+`;
+const AddButton = styled.button``;
+const GroupWatchButton = styled.button``;
